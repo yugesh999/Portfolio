@@ -8,10 +8,10 @@ const Header = () => {
             <img src="/assets/profile.jpg" alt="Profile Picture" />
 
             <h3>
-                beatae voluptatibus officiis quae similique eaque hic v
+                I am Yugesh Maharjan, Frontend Developer.
             </h3>
             <p>
-                beatae voluptatibus officiis quae similique eaque hic vbeatae voluptatibu
+                I am a frontend developer with 0 experience...
             </p>
             <div className="resume">
                 My Resume

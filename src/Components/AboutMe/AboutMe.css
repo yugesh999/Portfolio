@@ -1,0 +1,71 @@
+.aboutMe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.aboutSection{
+    display: flex;
+    gap: 40px;
+}
+.aboutLeft img{
+    width: 250px;
+    height: 250px;
+}
+.aboutRight{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.aboutPara{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 22px;
+    font-weight: 500;
+}
+.aboutSkills{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.aboutSkill{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.aboutSkill p{
+    min-width: 150px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.aboutSkill hr{
+    height: 8px;
+    background: linear-gradient(to right, #000000, #333333);
+    border-radius: 50px;
+    border: 1px solid black;
+}
+
+.aboutAchievments{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    gap: 20px;
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
+.aboutAchievment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.aboutSkill:hover{
+    transform: scale(1.05);
+    transition: 0.3sec;
+}
+.aboutAchievment:hover{
+    transform: scale(1.05);
+    transition: 0.3sec;
+}
