@@ -5,6 +5,7 @@ const Navbar = () => {
   return (
     <div className='navbar'>
         <h1>Yugesh Maharjan</h1>
+            <img src="/assets/sidebar.png" alt=""/>
 
         <ul className='nav-menu'>
             <li><a href="#home">Home</a></li>
