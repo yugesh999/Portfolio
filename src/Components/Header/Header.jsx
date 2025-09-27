@@ -4,7 +4,7 @@ import './Header.css'
 const Header = () => {
   return (
     <>
-        <div className="headerContainer">
+        <div className="header-container">
             <img src="/assets/profile.jpg" alt="Profile Picture" />
 
             <h3>
@@ -13,7 +13,7 @@ const Header = () => {
             <p>
                 I am a frontend developer with 0 experience...
             </p>
-            <div className="resume">
+            <div className="resume-button">
                 My Resume
             </div>
         </div>
