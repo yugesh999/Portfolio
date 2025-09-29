@@ -75,6 +75,7 @@
         flex-direction: column;
         gap: 15px;
     }
+    
     .footer-email-input input{
         width: 70%;
         font-size: 15px;
