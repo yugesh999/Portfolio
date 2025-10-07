@@ -1,9 +1,40 @@
 import React from 'react'
+import { useState } from "react";
 import './ContactMe.css'
+
 const Contact = () => {
+
+  const [result, setResult] = useState("");
+
+    const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "868eee32-4c10-48b3-816c-28c95a5107a5");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      // setResult("Form Submitted Successfully");
+      alert("--Success--")
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+
+
+
   return (
 <>
-    <div className="contact">
+    <div id='contact' className="contact">
       <div className="contact-title">
           <h1>Contact Me</h1>
       </div>
@@ -26,7 +57,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <form className="contact-right">
+        <form onSubmit={onSubmit} className="contact-right">
           <label htmlFor="">Name</label>
           <input type="text" placeholder='Enter your name' name='name'/>
           <label htmlFor="">Email</label>

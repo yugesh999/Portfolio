@@ -15,17 +15,19 @@
 .nav-menu{
     display: flex;
     list-style: none;
-    color: black;
+    /* color: black; */
     gap: 60px;
     font-size: 20px;
 
 }
-.nav-menu a{
+.navbar ul li a{
+    font-size: 20px;
     text-decoration: none;
     color: white;
 }
 .nav-menu li a:hover{
     color: gray;
+    cursor: pointer;
 }
 .nav-connect{
     padding: 15px 30px;
@@ -82,4 +84,11 @@
         flex-direction: row;
         gap: 20px;
     }
+}
+.anchor-link{
+    text-decoration: none;
+}
+.nav-menu li.active .anchor-link{
+  color: yellow;       
+  cursor: pointer;
 }
