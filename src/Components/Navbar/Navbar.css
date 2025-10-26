@@ -48,7 +48,7 @@
 .nav-close{
     display: none;
 }
-@media(max-width:768px){
+@media(max-width:600px){
     .nav-connect{
         display: none;
     }
