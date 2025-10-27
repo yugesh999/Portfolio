@@ -18,7 +18,7 @@ const Navbar = () => {
           <h1>Yugesh Maharjan</h1>
           <img src="/assets/sidebar.png" onClick={openMenu} alt="" className='nav-sidebar'/>
           <ul ref={menuRef} className='nav-menu'>
-              <img src="assets/close.png" onClick={closeMenu} alt="" className="nav-close" />
+              <img src="/assets/close.png" onClick={closeMenu} alt="" className="nav-close" />
 
 
               <li className={menu==="home" ? "active" : ""}onClick={()=>setMenu("home")}>

@@ -12,7 +12,6 @@
     z-index: 1000;            
 }
 
-
 /* Navigation Menu */
 .nav-menu {
   display: flex;
@@ -65,11 +64,16 @@
 .nav-close {
   display: none;
 }
-
+.anchor-link {
+  text-decoration: none;
+  color: white;
+}
 /* Responsive Navbar */
-/* Responsive Navbar for mobile and tablet in one media query */
 @media (max-width: 1024px) {
-
+  .navbar {
+    gap: 50px;
+    padding: 15px 0;
+  }
   /* Hide connect button */
   .nav-connect {
     display: none;
@@ -79,17 +83,18 @@
   .nav-sidebar {
     display: block;
     position: fixed;
+    top: 25px;
     right: 30px;
-    z-index: 1001;
   }
 
   /* Close icon */
   .nav-close {
     display: block;
     position: relative;
-    top: 25px;
-    left: 290px;
+    top: -55px;
+    right: -290px;
     width: 30px;
+    z-index: 1002; 
   }
 
   /* Navigation menu */
@@ -98,32 +103,26 @@
     flex-direction: column;
     align-items: start;
     top: 0;
-    background-color: #1E293B; /* Dark slate */
-    width: 80%;               /* default width for mobile and tablet */
-    max-width: 350px;         /* constrain on larger tablets */
+    background-color: #1E293B;
+    width: 80%;
+    max-width: 350px;
     height: 100%;
     z-index: 1000;
     transition: right 0.5s;
     padding-top: 80px;
     gap: 30px;
-    right: -350px;            /* hidden by default */
+    right: -350px; /* hidden by default */
   }
 
   /* Menu items */
   .nav-menu li {
-    font-size: 24px;          /* reasonable size for phones and tablets */
+    font-size: 24px;
     padding-left: 30px;
   }
 
-  /* Optional navbar adjustments */
-  .navbar {
-    gap: 50px;
-    padding: 15px 0;
-  }
+  /* Navbar spacing for mobile */
+  
 }
 
 /* Anchor Links */
-.anchor-link {
-  text-decoration: none;
-}
 

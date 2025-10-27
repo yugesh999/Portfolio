@@ -7,11 +7,11 @@ const Header = () => {
         <div id="home" className="header-container">
             <img src="/assets/profile.jpg" alt="Profile Picture" />
 
-            <h3>
-                I am Yugesh Maharjan, Frontend Developer.
-            </h3>
+            <h2>
+                Yugesh Maharjan. 
+            </h2>
             <p>
-                I am a frontend developer with 0 experience...
+                Frontend Developer
             </p>
             <div className="resume-button">
                 My Resume

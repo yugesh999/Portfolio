@@ -25,22 +25,22 @@ const AboutMe = () => {
         </div>
       </div>
 
-      <div className="about-achievments">
+      {/* <div className="about-achievments">
+          <div className="about-achievment">
+          <h1>0</h1>
+          <p>Years Experience</p>
+          </div>
+          <hr />
+          <div className="about-achievment">
+            <h1>1</h1>
+            <p>Project about to be completed</p>
+          </div>
+        <hr />
         <div className="about-achievment">
-        <h1>0</h1>
-        <p>Years Experience</p>
-      </div>
-      <hr />
-      <div className="about-achievment">
-        <h1>1</h1>
-        <p>Project about to be completed</p>
-      </div>
-      <hr />
-      <div className="about-achievment">
-        <h1>0</h1>
-        <p>Sites deployed</p>
-      </div>
-      </div>
+          <h1>0</h1>
+          <p>Sites deployed</p>
+        </div>
+      </div> */}
     </div>
   )
 }
