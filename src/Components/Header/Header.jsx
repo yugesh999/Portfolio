@@ -1,7 +1,15 @@
 import React from 'react';
 import './Header.css'
 
-const Header = () => {
+function Header() {
+  const handleResumeClick = () => {
+    // Open the PDF in a new tab
+    window.open("/assets/CV.pdf");
+  }
+
+
+
+    
   return (
     <>
         <div id="home" className="header-container">
@@ -13,7 +21,7 @@ const Header = () => {
             <p>
                 Frontend Developer
             </p>
-            <div className="resume-button">
+            <div className="resume-button" onClick={handleResumeClick}>
                 My Resume
             </div>
         </div>
@@ -24,3 +32,4 @@ const Header = () => {
 };
 
 export default Header;
+
